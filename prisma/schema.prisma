@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client { //this lego piece generates a Prisma client for JavaScript to interact with the database in our project
+  provider = "prisma-client-js"
+}
+
+datasource db { //this lego piece sets our provider as postgreql and connects to the database's url
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User { //this is the model for every user in the project
+  id       Int     @id @default(autoincrement()) //gives the user a unique id
+  username String  @unique //represents user's username
+  password String //represents the user's password
+  posts    Post[] //an array of Post lego pieces, one-to-many since a user can have many posts
+}
+
+model Post { //this model is for every post made
+  id       Int     @id @default(autoincrement()) //unique identifier
+  title    String //posts titls
+  content  String //posts content
+  userId   Int //tells what user postsed the post
+  user     User    @relation(fields: [userId], references: [id]) //establishes a relationship between post and user
+}
