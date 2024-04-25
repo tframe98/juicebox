@@ -8,9 +8,9 @@ async function main() { //builds another lego structure which will contain diffe
       password: 'root',
       posts: {
         create: [
-          {title: 'Juice', content: 'Content for post 1'},
-          {title: 'Juice', content: 'Content for post 2'},
-          {title: 'Juice', content: 'Content for post 3'},
+          {title: 'Summer Berry Blast', content: 'Enjoy the fresh blend of strawberries, raspberries, and blueberries in our Summer Berry Blast'},
+          {title: 'Citrus Zinger', content: 'Enjoy the fresh blend of oranges, lemons, and ginger in our Citrus Zinger'},
+          {title: 'Pomegranate Perfection', content: 'Enjoy the fresh blend of pomegranates and antioxidants in our Pomegranate Perfection'},
         ],
       },
     },
@@ -22,9 +22,9 @@ async function main() { //builds another lego structure which will contain diffe
       password: 'root',
       posts: {
         create: [
-          {title: 'Juice', content: 'Content for post 1'},
-          {title: 'Juice', content: 'Content for post 2'},
-          {title: 'Juice', content: 'Content for post 3'},
+          {title: 'Topical Mango Mix', content: 'Enjoy the fresh blend of mangos and pineapple and antioxidants in our Tropical Mango Mix'},
+          {title: 'Apple Orchard Fresh', content: 'Enjoy the fresh blend of apples and citruses in our Apple Orchard Fresh'},
+          {title: 'Berry', content: 'Enjoy the fresh blend of watermelon and mixed berries in our Berry Watermelon Wonder'},
         ],
       },
     },
@@ -36,9 +36,9 @@ async function main() { //builds another lego structure which will contain diffe
       password: 'root',
       posts: {
         create: [
-          {title: 'Juice', content: 'Content for post 1'},
-          {title: 'Juice', content: 'Content for post 2'},
-          {title: 'Juice', content: 'Content for post 3'},
+          {title: 'Green Detox Delight', content: 'Enjoy the fresh blend of spinach, kale, and green apples in our Green Detox Delight'},
+          {title: 'Carrot Ginger Glow', content: 'Enjoy the fresh blend of carrots and ginger twists in our Carrot Ginger Glow'},
+          {title: 'Pineapple Paradise', content: 'Enjoy the fresh blend of pineapple and citrus fruits in our Pineapple Paradise'},
         ],
       },
     },
